@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Fotag!</title>
+
+    <!--
+    All of your CSS must go in css/fotag.css. Do not add styles to individual elements.
+    All of your CSS must be your own -- you may not use third-party CSS, like Bootstrap.
+    -->
+    <link rel="stylesheet" href="css/fotag.css"/>
+    <link rel="stylesheet" href="css/uploadPic.css"/>
+    <link rel="stylesheet" href="css/media.css"/>
+    <link rel="stylesheet" href="css/nav.css"/>
+    <link rel="stylesheet" href="css/star-rating.css"/>
+    <link rel="stylesheet" href="css/commonCSS.css"/>
+
+    <link rel="stylesheet" href="css/me_nav.css"/>
+
+    <!--
+        <link rel="stylesheet" href="css/viewtext.css"/>
+    -->
+    <style>
+        .marking-button {
+            float: right;
+        }
+
+        .marking-div-clear {
+            clear: both;
+        }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<!-- This header can be replaced -->
+
+<!--
+Import, organize, and rate your photos!
+-->
+
+<div class="topnavContainer" id="toolbar">
+
+    <div class="topnavBar">
+        <div class="top">
+            
+            <strong class="choice">FoTag!</strong>
+            
+            <strong class="FilterBy">Filter:</strong>
+
+
+
+                <span id="starNav" class="star-ratingNav scrollbar left center-blockNav">
+                     <input type="radio" name="ratingNav" value="1"><i></i>
+                     <input type="radio" name="ratingNav" value="2"><i></i>
+                     <input type="radio" name="ratingNav" value="3"><i></i>
+                     <input type="radio" name="ratingNav" value="4"><i></i>
+                     <input type="radio" name="ratingNav" value="5"><i></i>
+                </span>
+            <div id="clearStar">
+            <strong class="clear">clear</strong>
+            </div>
+        </div>
+        
+        <div class="container-fluidNav hideDisplay">
+            <ul class="nav">
+                <li>
+                    <div id="nav_mult" class="topnav_home active">
+
+                    </div>
+                </li>
+                <li>
+                    <div id="nav_text" class="topnav_home">
+
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+<div id="bigPictureTemplateHolder">
+
+</div>
+
+<div id="app-container" class="sidePad">
+
+    <div class="container-fluid master menu" id="imageCollectionViewNode">
+
+
+
+        <!-- DISPLAY 2 PICTURE AND TEXT -->
+
+
+        <div align="center">
+            <div class="example littleonTheTop hide">
+
+
+                <div class="post-container">
+                    <div class="post-thumb">
+
+                        <div id="dropButton">
+                            <form class="dropzone dz-clickable">
+
+                                <div class="dz-message">
+
+                                  <!--  <strong class="textSizeDrop">Drop</strong> files here or<br> -->
+                                    <br>
+                                    <span class="note textSizeDrop"><strong>Click</strong> to upload</span>
+
+                                </div>
+                            </form>
+                            <!-- pictureThingy go here later -->
+                            <div id="pictureThingy" style="margin-top: 1px">
+                            </div>
+
+                            <!-- put stars in line hope for the love of god it works -->
+                            <div style="margin-top: 8px">
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <h3 class="post-title">Your picture
+                        could be here!
+                    </h3>
+
+                    <p>
+
+                    <div class="date">
+                        Creation Date.
+                    </div>
+                    <div class="moveStarsDown">
+
+                    </div>
+                        <span class="star-rating">
+                             <input type="radio" name="ratingUpload" value="1"><i></i>
+                             <input type="radio" name="ratingUpload" value="2"><i></i>
+                             <input type="radio" name="ratingUpload" value="3"><i></i>
+                             <input type="radio" name="ratingUpload" value="4"><i></i>
+                             <input type="radio" name="ratingUpload" value="5"><i></i>
+                        </span>
+
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div align="center">
+                <div class="example littleonTheTop hide">
+
+
+                    <div class="post-container" style="margin-top: 110px;">
+                        <div class="post-thumb">
+                            <div id="unit-tests">
+                                <button class="marking-button" style="float: none;">
+                                    Mark Me!
+                                </button>
+                                <div class="marking-div-clear">
+                                </div>
+                                <a href="unit_tests.html">Run Unit Tests</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    <!-- Display 1 end-->
+
+    <div class="bottomPad">
+
+    </div>
+
+
+
+    <!-- fuild master -->
+</div> <!--app-continer ****** -->
+
+
+
+<!-- A template for a file chooser, to select multiple files. See FileChooser in view.js. -->
+
+<template id="file-chooser">
+    <input id="file-chooserButton" type="file" class="files-input" name="file_results[]" multiple />
+    <output id="list"></output>
+</template>
+
+<!-- Keep this here so TAs can run your unit tests -->
+<!-- This button is for marking purposes to test your architecture. Do not remove it-->
+<!--
+<div id="unit-tests">
+
+
+    <button class="marking-button">Mark Me!</button>
+    <div class="marking-div-clear"></div>
+
+    <a href="unit_tests.html">Run Unit Tests</a>
+</div>
+-->
+<script src="js/replacecss.js"></script>
+<script src="js/ext/underscore.js"></script>
+<script src="js/model.js"></script>
+<script src="js/view.js"></script>
+<script src="js/fotag.js"></script>
+<script src="js/markers_code.js"></script>
+
+</body>
+</html>
+
+
+<template id="overlayTemp">
+    <div id="overlay" class="overlay">
+        <img src="images/GOPR0042-small.jpg" class="overlayPicture"/>
+    </div>
+
+    <div class="close">
+        <img src="codeimages/closeButton.png"/>
+    </div>
+</template>
+
+
+
+<template id="imageRenderTemplate">
+     <!--<div align="center"> -->
+
+            <div class="example littleonTheTop hide">
+
+
+            <div class="post-container">
+                <div class="post-thumb">
+                    <div class="crop center-block">
+                        <img src="images/GOPR0042-small.jpg" class="picture"/>
+                    </div>
+                </div>
+
+
+
+                <div class="post-title title">GOPR0042-small.jpg</div>
+
+                <div class="date" style="margin-bottom: .5em">
+
+                </div>
+                <div style="margin-bottom: 0px">
+                    <input class="removeButton" type="button" value="remove" style="width: 100px; opacity: 1">
+                </div>
+				
+				<div class="moveTemplateStarDown">
+                    <span class="star-rating">
+                         <input type="radio" name="rating" value="1"><i></i>
+                         <input type="radio" name="rating" value="2"><i></i>
+                         <input type="radio" name="rating" value="3"><i></i>
+                         <input type="radio" name="rating" value="4"><i></i>
+                         <input type="radio" name="rating" value="5"><i></i>
+                    </span>
+				</div>
+
+
+            </div>
+        </div>
+    <!-- </div> -->
+</template>

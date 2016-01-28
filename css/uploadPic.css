@@ -1,0 +1,37 @@
+.dropzone {
+    border: 2px dashed #0087F7;
+    border-radius: 5px;
+    background: rgb(230,230,230);
+    width: 246px;
+    height: 196px;
+}
+
+.cropupload {
+    width: 250px;
+    height: 216px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.dropzone.dz-clickable {
+    cursor: pointer;
+}
+
+.dropzone .dz-message {
+    font-weight: 400;
+    text-align: center;
+    margin-top: 30%;
+    margin-bottom: 30%;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+div.special {
+    border: #660033 dotted;
+    padding: 0.5em;
+    margin: 1em 2em;
+    float: left;
+}

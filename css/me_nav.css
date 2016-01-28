@@ -1,0 +1,77 @@
+@media screen and (max-width: 330px){
+
+div.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+}
+
+
+@media screen and (max-width: 742px) {
+    .clear{
+        position: absolute;
+        left: 200px;
+        top: 46px;
+        cursor: pointer;
+    }
+	
+	.moveStarsDown{
+		margin-top: 30px
+	}
+
+    .container-fluidNav {
+        padding-right: 1%;
+        padding-left: 1%;
+    }
+
+    .FilterBy {
+        
+		top: 44px;
+    }
+
+    .left {
+        margin-left: 90px;
+        margin-top: 45px;
+    }
+
+    .scrollBar {
+        margin-top: 45px;
+    }
+
+    .topnavContainer {
+        background-color: rgb(255, 255, 255);
+        height: 40px;
+    }
+
+    .topnavBar {
+        background-color: #333;
+        width: 100%;
+        height: 5px;
+        margin-top: 40px;
+    }
+
+    span.star-ratingNav {
+        font-size: 0;
+        white-space: nowrap;
+        display: inline-block;
+        width: 100px;
+        height: 20px;
+        overflow: hidden;
+        position: relative;
+        background: url('../codeimages/stargrey2.png');
+        background-size: contain;
+    }
+
+    strong.choice {
+        text-align: center;
+    }
+
+    .hideDisplay {
+        display: none;
+    }
+
+}
+

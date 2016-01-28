@@ -1,0 +1,145 @@
+/* font 
+body{
+    font-family: Open Sans;
+}
+*/
+
+body:before{
+    height: 100%;
+    content:'';
+    width:0;
+    background:red;
+    vertical-align: middle;
+    display:inline-block;
+}
+
+.topnavContainer {
+    position:fixed;
+    width:100%;
+    top:50px;
+    z-index:9;
+    background-color:rgb(95,95,95);
+    height:40px;
+}
+
+.topnav_home {
+    /*  background-image: url('/codeimages/home.png'); */
+    background-repeat: no-repeat;
+    background-position: 50% 46%;
+    color: transparent !important;
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+
+.container-fluidNav {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.scrollBar{
+    height: 50px;
+    margin-top: 8px;
+
+}
+
+.top {
+    width: 100%;
+    z-index: 99;
+    position: fixed;
+    height: 50px;
+    top: 0;
+    background-color: #ffffff;
+}
+
+    .left {
+        margin-left: 85px;
+        margin-top: 8px;
+    }
+
+.FilterBy{
+    position: fixed;
+    right:0;
+    text-align: left;
+    left: 5px;
+    font-size: 20px;
+    display:block;
+    top: 15px;
+}
+
+.container-fluidNav {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.choice{
+    position: fixed;
+    top: 0;
+    left:0;
+    right:0;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 30px;
+    display:block;
+}
+
+/* Chanting pictures on hover */
+
+
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    list-style: none;
+    cursor: pointer;
+}
+
+#nav_mult {
+    background-image: url('../codeimages/view_icon_mult.png');
+    width: 36px;
+    height: 36px;
+    margin-left: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px
+    cursor: pointer;
+}
+
+#nav_mult:hover, #nav_mult.active {
+    background-image: url('../codeimages/view_icon_mult_click.png');
+    width: 36px;
+    height: 36px;
+    margin-left: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px
+    cursor: pointer;
+}
+
+#nav_text {
+    background-image: url('../codeimages/view_icon_text.png');
+    width: 36px;
+    height: 36px;
+    margin-left: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px
+    cursor: pointer;
+}
+
+#nav_text:hover, #nav_text.active {
+    background-image: url('../codeimages/view_icon_text_click.png');
+    width: 36px;
+    height: 36px;
+    margin-left: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+
+
+
+.bottomPad{
+    margin-top: 20px;
+}

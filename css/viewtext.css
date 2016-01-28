@@ -1,0 +1,63 @@
+@media screen and (max-width: 742px){
+    div.example {
+        border: 5px #660033 solid;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top:10px;
+
+        margin-top: 10px;
+
+        width: 250px;
+        height: 350px;
+
+        margin-left: 0em;
+        margin-right: 0em;
+        margin-bottom: 0em;
+        float: none;
+    }
+}
+
+@media screen and (min-width: 741px){
+
+
+    div.example{
+        float: none;
+        width: 75%;
+        margin-left: 0px;
+        margin-right: 0px;
+        border: none;
+    }
+    .post-container {
+        margin: 20px 20px 0 0;
+        border: 5px solid #333;
+        overflow: auto
+    }
+    .post-thumb {
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        float: left
+    }
+    .post-thumb img {
+        display: block
+    }
+
+    .post-title {
+        font-weight: bold;
+        font-size: 200%
+    }
+
+    .dropzone{
+        margin-top: 0px;
+    }
+
+    div.sidePad{
+        margin-left: 0%;
+    }
+}
+
+
+div.hide{
+    visibility: visible;
+}
+
